@@ -1,0 +1,3 @@
+# springboot-shedlock
+
+shedlock可以在集群环境下只有一个name为TaskScheduler_scheduledTask的实例运行
