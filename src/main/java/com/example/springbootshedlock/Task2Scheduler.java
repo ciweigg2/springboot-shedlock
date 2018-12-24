@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 class Task2Scheduler {
 
-    @Scheduled(cron = "*/1 * * * * ?")
+    @Scheduled(cron = "*/1 * * * * ?")//每秒执行一次
     @SchedulerLock(name = "TaskScheduler_scheduledTask",
             lockAtLeastForString = "PT1M", lockAtMostForString = "PT2M")
     public void scheduledTask() throws InterruptedException {
